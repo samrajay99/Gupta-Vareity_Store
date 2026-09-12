@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #13231d; --muted: #536b63; --leaf: #0d6a52; --forest: #0a4d3b; --mint: #eaf7f1; --gold: #d4a84f; --cream: #f7f4ee; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { @apply bg-cream font-sans text-ink antialiased; background-image: radial-gradient(circle at 80% 5%, rgba(212,168,79,.18), transparent 24%), linear-gradient(180deg, #f7f4ee 0%, #fffdf8 100%); }
+::selection { background: #d4a84f; color: #13231d; }
+.dark-mode { --ink: #edf8f3; --muted: #adbfba; --leaf: #8fe9c3; --forest: #addcc4; --mint: rgba(143,233,195,.12); --gold: #f3c96c; --cream: #0e1715; }
+.dark-mode body, body.dark-mode { @apply bg-[#0e1715] text-[#edf8f3]; background-image: radial-gradient(circle at 80% 5%, rgba(243,201,108,.12), transparent 24%), linear-gradient(180deg, #0e1715 0%, #121d1a 100%); }
+@layer components {
+  .container-page { @apply mx-auto w-[min(1180px,calc(100%-28px))]; }
+  .eyebrow { @apply inline-flex items-center rounded-full bg-mint px-3.5 py-1.5 text-[.7rem] font-extrabold uppercase tracking-[.12em] text-forest; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-leaf to-forest px-5 py-3 font-extrabold text-white shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-glow disabled:cursor-wait disabled:opacity-60; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-full border border-leaf/15 bg-mint px-5 py-3 font-extrabold text-forest transition duration-300 hover:-translate-y-1; }
+  .section-pad { @apply py-20 md:py-28; }
+  .surface { @apply rounded-[2rem] border border-leaf/10 bg-white/80 shadow-soft backdrop-blur dark:bg-[#14241f]/90; }
+  .field { @apply w-full rounded-xl border border-leaf/15 bg-white px-4 py-3 text-ink outline-none transition placeholder:text-slate-400 focus:border-gold focus:ring-4 focus:ring-gold/15 dark:bg-[#1a2d28] dark:text-[#edf8f3] dark:placeholder:text-[#9bb8ae]; }
+}

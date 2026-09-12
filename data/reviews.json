@@ -1,0 +1,26 @@
+[
+  {
+    "id": "12124c80-b830-4e21-b459-0a0e1a89b64d",
+    "name": "Samrajay Gupta",
+    "message": "This is the best shop in this locality ..the owner is very polite and the good in behavior",
+    "createdAt": "2026-09-12T20:06:14.688Z",
+    "images": [
+      "/api/reviews/image/12124c80-b830-4e21-b459-0a0e1a89b64d-8446ab4d-ffab-4372-ba4d-8296bab8b27e.jpg"
+    ],
+    "files": [
+      "12124c80-b830-4e21-b459-0a0e1a89b64d-8446ab4d-ffab-4372-ba4d-8296bab8b27e.jpg"
+    ]
+  },
+  {
+    "id": "07f0c618-c0d8-4cb7-b509-3a8f3bee2a59",
+    "name": "Samrajay Gupta",
+    "message": "This is the best shop in this locality ..the owner is very polite and the good in behavior",
+    "createdAt": "2026-09-12T20:03:39.946Z",
+    "images": [
+      "/api/reviews/image/07f0c618-c0d8-4cb7-b509-3a8f3bee2a59-ef29c9b7-3d66-449b-b036-50ed8f848424.jpg"
+    ],
+    "files": [
+      "07f0c618-c0d8-4cb7-b509-3a8f3bee2a59-ef29c9b7-3d66-449b-b036-50ed8f848424.jpg"
+    ]
+  }
+]

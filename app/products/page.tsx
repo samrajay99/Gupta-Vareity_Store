@@ -1,0 +1,3 @@
+import ProductGallery from '../../components/ProductGallery';
+export const metadata = { title: 'Products | Gupta Variety Store', description: 'Browse snacks, groceries, beverages, household essentials, and personal care products at Gupta Variety Store.' };
+export default function ProductsPage() { return <main><section className="section-pad"><div className="container-page"><div className="mb-8 text-center"><span className="eyebrow">Our Selection</span><h1 className="mt-3 text-4xl font-extrabold md:text-6xl">Everything your household needs</h1><p className="mx-auto mt-3 max-w-2xl text-slate-600 dark:text-[#adbfba]">Fresh, trusted, and locally loved groceries, namkeen, daily essentials, and family favourites.</p></div><ProductGallery /></div></section></main>; }
