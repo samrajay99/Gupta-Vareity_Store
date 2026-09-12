@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gupta Variety Store (গুপ্তা ভ্যারাইটি স্টোর্স) - Patipukur, Kolkata</title>
+  <meta name="description" content="Gupta Variety Store in Patipukur, Kolkata. Offering chips, namkeen, chanachur, muri, dry ration staples, spices, packaged food, and daily household needs." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #047857;
+      --primary-dark: #065f46;
+      --accent: #ea580c;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 14px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 8px 20px -4px rgba(0,0,0,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 75px; /* space for mobile bar */
+    }
+
+    /* Top Strip */
+    .top-strip {
+      background: #064e3b;
+      color: #d1fae5;
+      font-size: 0.82rem;
+      text-align: center;
+      padding: 0.45rem 1rem;
+      font-weight: 500;
+    }
+
+    /* Header Navigation */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .nav-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .brand-bengali {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn-nav-call {
+      background: #ecfdf5;
+      color: var(--primary);
+      border: 1.5px solid #a7f3d0;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Hero Section with Shop Photo */
+    .hero {
+      max-width: 1140px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media(min-width: 880px) {
+      .hero {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+    }
+
+    .hero-text {
+      text-align: left;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #ecfdf5;
+      color: var(--primary-dark);
+      border: 1px solid #bbf7d0;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(2.1rem, 4vw, 2.9rem);
+      font-weight: 800;
+      line-height: 1.18;
+      margin-bottom: 0.85rem;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-text h1 span {
+      color: var(--primary);
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.8rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #ffffff;
+      box-shadow: 0 10px 24px rgba(4, 120, 87, 0.18);
+    }
+
+    .cta-secondary {
+      background: #ecfdf5;
+      color: var(--primary-dark);
+      border: 1.5px solid #bbf7d0;
+    }
+
+    .mini-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.5rem;
+    }
+
+    .mini-badges span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 0.42rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .owner-story {
+      max-width: 1140px;
+      margin: 0 auto 2rem;
+      padding: 0 1.25rem;
+    }
+
+    .owner-panel {
+      background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+      border: 1px solid #bbf7d0;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    @media (min-width: 820px) {
+      .owner-panel {
+        grid-template-columns: 0.92fr 1.08fr;
+      }
+    }
+
+    .owner-photo {
+      min-height: 280px;
+      background: linear-gradient(135deg, #dbeafe 0%, #ecfdf5 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .owner-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .owner-copy {
+      padding: 2rem 1.5rem;
+    }
+
+    .owner-copy .eyebrow {
+      display: inline-block;
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+      color: var(--primary-dark);
+      background: #d1fae5;
+      border-radius: 999px;
+      padding: 0.38rem 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .owner-copy h3 {
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .owner-copy .nickname {
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .owner-copy p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .owner-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .owner-stats span {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.52rem 0.85rem;
+      font-size: 0.82rem;
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .promise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .promise-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.4rem 1.1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .promise-card .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ecfdf5;
+      color: var(--primary);
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .promise-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+      color: #0f172a;
+    }
+
+    .promise-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .shop-photo-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 3px solid #ffffff;
+      max-height: 420px;
+    }
+
+    .shop-photo-card img {
+      width: 100%;
+      height: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .shop-photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+      color: #ffffff;
+      padding: 1.5rem 1rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* Live Search Input */
+    .search-box {
+      position: relative;
+      margin-top: 1rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.85rem 1rem 0.85rem 2.8rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      font-size: 0.95rem;
+      outline: none;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+    }
+
+    /* Categories & Product Cards */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-title h2 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.35rem;
+    }
+
+    .empty-state {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem 1.15rem;
+      border: 1px dashed #cbd5e1;
+      background: #f8fafc;
+      border-radius: 12px;
+      color: var(--text-muted);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .trust-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .trust-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .trust-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .trust-card p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .product-img-wrap {
+      width: 100%;
+      height: 160px;
+      background: #f1f5f9;
+      overflow: hidden;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: auto;
+    }
+
+    .tag-item {
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 0.76rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    /* WhatsApp Order Section */
+    .order-banner {
+      background: linear-gradient(135deg, #047857 0%, #064e3b 100%);
+      color: #ffffff;
+      border-radius: var(--radius);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 800px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .order-banner h3 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .order-banner p {
+      color: #a7f3d0;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .order-textarea {
+      width: 100%;
+      max-width: 520px;
+      height: 90px;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 0.95rem;
+      outline: none;
+      margin-bottom: 1.1rem;
+      resize: none;
+    }
+
+    .btn-wa-order {
+      background: #25d366;
+      color: #ffffff;
+      padding: 0.85rem 1.8rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    }
+
+    /* Store Info & Map Embed */
+    .info-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    @media(min-width: 880px) {
+      .info-layout {
+        grid-template-columns: 1fr 1.2fr;
+      }
+    }
+
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-row {
+      margin-bottom: 1.35rem;
+    }
+
+    .info-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+
+    .info-value {
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: #1e293b;
+    }
+
+    .map-frame-box {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      min-height: 380px;
+      background: #fff;
+    }
+
+    .map-frame-box iframe {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 380px;
+      border: 0;
+      display: block;
+    }
+
+    /* Mobile Quick Action Footer */
+    .mobile-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      padding: 0.65rem 1rem;
+      display: flex;
+      gap: 0.75rem;
+      z-index: 50;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+    }
+
+    .m-btn {
+      flex: 1;
+      text-align: center;
+      padding: 0.8rem 0.5rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+
+    .m-btn-call {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .m-btn-wa {
+      background: #25d366;
+      color: #ffffff;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-footer {
+        display: none;
+      }
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 2.5rem 1.25rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Ribbon -->
+  <div class="top-strip">
+    📍 Since 1990 • Trusted by Basak Bagan Families • Gupta Ji Bhujiya Wala
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-inner">
+      <div class="brand-title">
+        <span class="brand-name">Gupta Variety Store</span>
+        <span class="brand-bengali">গুপ্তা ভ্যারাইটি স্টোর্স</span>
+      </div>
+      <div class="nav-actions">
+        <a href="tel:9007182511" class="btn-nav-call">📞 Call 9007182511</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="badge-pill">
+        ✓ Verified Neighborhood Store
+      </div>
+      <h1>Trusted <span>Groceries & Bhujiya</span> from Basak Bagan</h1>
+      <p>Since 1990, Gupta Variety Store has been serving families in Patipukur with trusted snacks, grains, spices, daily essentials, and warm neighborhood service.</p>
+
+      <div class="hero-actions">
+        <a href="tel:9007182511" class="cta-btn cta-primary">📞 Call Store</a>
+        <a href="https://wa.me/919007182511?text=Hello%20Gupta%20Variety%20Store%2C%20I%20want%20to%20order%20groceries." class="cta-btn cta-secondary">💬 WhatsApp Order</a>
+      </div>
+
+      <div class="mini-badges">
+        <span>🏠 Family trust since 1990</span>
+        <span>💵 Cash & UPI</span>
+        <span>🚀 Fast local service</span>
+      </div>
+      
+      <!-- Live Search Filter -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="itemSearch" 
+          placeholder="Search items: chips, muri, chanachur, dal, oil, soap..." 
+          onkeyup="searchItems()"
+        />
+      </div>
+    </div>
+
+    <!-- Real Shop Front Image -->
+    <div class="shop-photo-card">
+      <img src="shop.jpg" alt="Gupta Variety Store front view in Patipukur Kolkata" />
+      <div class="shop-photo-caption">
+        Gupta Variety Store • 77 Basak Bagan, Patipukur (Opposite to the Pond)
+      </div>
+    </div>
+  </section>
+
+  <section class="owner-story">
+    <div class="owner-panel">
+      <div class="owner-photo">
+        <img src="owner-photo.jpg" alt="Shiv Narayan Gupta, owner of Gupta Variety Store" />
+      </div>
+      <div class="owner-copy">
+        <div class="eyebrow">Founder Story</div>
+        <h3>Meet Shiv Narayan Gupta</h3>
+        <p>
+          <span class="nickname">Gupta Ji Bhujiya Wala</span> is a beloved name in Basak Bagan, Patipukur.
+          Since 1990, Shiv Narayan Gupta has built a reputation for sincerity, quality, and dependable service that families trust every day.
+        </p>
+        <p>
+          What started as a neighborhood shop has grown into a reliable local destination for bhujia, namkeen, groceries, household supplies, and daily essentials.
+          The shop continues to win loyalty through honest service and a personal connection with every customer.
+        </p>
+        <div class="owner-stats">
+          <span>Since 1990</span>
+          <span>Trusted Local Shop</span>
+          <span>Basak Bagan Favorite</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="section-title">
+      <h2>Why families trust Gupta Ji</h2>
+      <p>More than a shop — a familiar neighborhood institution</p>
+    </div>
+
+    <div class="promise-grid">
+      <div class="promise-card">
+        <div class="icon">🥭</div>
+        <h4>Consistent Quality</h4>
+        <p>Fresh, properly packed essentials and snacks that customers keep coming back for.</p>
+      </div>
+      <div class="promise-card">
+        <div class="icon">🤝</div>
+        <h4>Friendly Service</h4>
+        <p>Known for a helpful, approachable attitude and genuine customer care in the locality.</p>
+      </div>
+      <div class="promise-card">
+        <div class="icon">📦</div>
+        <h4>Local Convenience</h4>
+        <p>Everything from daily groceries to festive snacks and household essentials under one roof.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Catalog with Real Photos -->
+  <div class="container">
+    <div class="section-title">
+      <h2>Products Available in Store</h2>
+      <p>We stock genuine, freshly sealed packaged food and household items</p>
+    </div>
+
+    <div class="product-grid" id="productList">
+      <div class="empty-state" id="noResults">No matching items found. Try searching for chips, muri, dal, oil, or soap.</div>
+      
+      <!-- 1. Chips & Wafers -->
+      <div class="product-card" data-tags="chips potato kurkure snacks nachos salted wafers lays bingo">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80" alt="Crispy Potato Chips and snacks" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Chips & Wafers</div>
+          <div class="product-tags">
+            <span class="tag-item">Potato Chips</span>
+            <span class="tag-item">Kurkure</span>
+            <span class="tag-item">Salted Wafers</span>
+            <span class="tag-item">Nachos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Puffed Rice (Muri) & Savoury Snacks -->
+      <div class="product-card" data-tags="puffed rice muri chanachur bhujia sev mixed savoury mixture peanut chana nimki namkeen">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Indian Namkeen, Puffed Rice and Savoury Snacks" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Muri, Chanachur & Namkeen</div>
+          <div class="product-tags">
+            <span class="tag-item">Puffed Rice (Muri)</span>
+            <span class="tag-item">Spicy Chanachur</span>
+            <span class="tag-item">Aloo Bhujia / Sev</span>
+            <span class="tag-item">Roasted Peanuts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Biscuits & Bakery Packs -->
+      <div class="product-card" data-tags="biscuits cookies toast rusk bakery cream marie digestive rusk cake Britannia Parle">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Packaged Biscuits and Cookies" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Biscuits & Rusks</div>
+          <div class="product-tags">
+            <span class="tag-item">Marie & Digestive</span>
+            <span class="tag-item">Cream Biscuits</span>
+            <span class="tag-item">Crispy Rusk & Toast</span>
+            <span class="tag-item">Tea Cookies</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Dry Staples: Atta, Rice & Pulses -->
+      <div class="product-card" data-tags="atta rice dal lentils besan sooji maida wheat pulse ration flour aashirvaad miniket basmati">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Grains, Rice, Atta and Pulses" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Atta, Rice & Dal</div>
+          <div class="product-tags">
+            <span class="tag-item">Packed Atta</span>
+            <span class="tag-item">Basmati & Miniket Rice</span>
+            <span class="tag-item">Toor, Masoor & Moong Dal</span>
+            <span class="tag-item">Sooji & Besan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Cooking Oils, Ghee & Masalas -->
+      <div class="product-card" data-tags="mustard oil refined sunflower oil ghee spices masala turmeric cumin haldi jeera mirch sunrise everest">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80" alt="Cooking spices and oils" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Cooking Oils & Spices</div>
+          <div class="product-tags">
+            <span class="tag-item">Pure Mustard Oil</span>
+            <span class="tag-item">Refined Sunflower Oil</span>
+            <span class="tag-item">Desi Ghee</span>
+            <span class="tag-item">Turmeric, Jeera & Mirch</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Instant Foods -->
+      <div class="product-card" data-tags="maggi noodles pasta instant soup sauce ketchup ready to eat yippee">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80" alt="Instant Noodles and Pasta" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Noodles & Sauces</div>
+          <div class="product-tags">
+            <span class="tag-item">Maggi & Instant Noodles</span>
+            <span class="tag-item">Pasta & Macaroni</span>
+            <span class="tag-item">Tomato & Chili Ketchup</span>
+            <span class="tag-item">Soya Chunks</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Packaged Drinks & Tea -->
+      <div class="product-card" data-tags="tea leaf dust coffee cold drinks soda mineral water beverage boost horlicks tata tea">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Tea, Coffee, Cold drinks and beverages" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Tea, Coffee & Cold Drinks</div>
+          <div class="product-tags">
+            <span class="tag-item">Packaged CTC Tea</span>
+            <span class="tag-item">Instant Coffee</span>
+            <span class="tag-item">Soft Drinks</span>
+            <span class="tag-item">Packaged Mineral Water</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Cleaning & Home Supplies -->
+      <div class="product-card" data-tags="soap detergent bar powder surf floor cleaner phenyl dishwash liquid agarbatti matchbox vim harpic">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&q=80" alt="Household Cleaning Essentials" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Cleaning & Home Care</div>
+          <div class="product-tags">
+            <span class="tag-item">Detergent Powder & Bars</span>
+            <span class="tag-item">Dishwash Bar & Liquids</span>
+            <span class="tag-item">Floor Cleaners & Phenyl</span>
+            <span class="tag-item">Agarbatti & Matchboxes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Toiletries & Personal Care -->
+      <div class="product-card" data-tags="shampoo bath soap toothpaste hair oil body lotion sanitary pads razor colgate parachute">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Personal care and toiletries" loading="lazy" />
+        </div>
+        <div class="product-content">
+          <div class="product-title">Personal Care</div>
+          <div class="product-tags">
+            <span class="tag-item">Bath Soaps</span>
+            <span class="tag-item">Toothpaste & Brushes</span>
+            <span class="tag-item">Hair Oils</span>
+            <span class="tag-item">Sanitary Napkins</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-title">
+      <h2>Why customers choose us</h2>
+      <p>Reliable essentials, everyday convenience, and quick local support</p>
+    </div>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">🛒</div>
+        <h3>Daily Essentials</h3>
+        <p>Snacks, groceries, oils, pulses, and home needs from one local stop.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">⏱️</div>
+        <h3>Quick Service</h3>
+        <p>Fast order handling for local households and regular weekly needs.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">📍</div>
+        <h3>Easy Location</h3>
+        <p>Located in Patipukur, near the pond, with clear local landmark access.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">💳</div>
+        <h3>Flexible Payment</h3>
+        <p>Cash and UPI support for smooth in-store and home ordering.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Fast Order Tool -->
+  <div class="container">
+    <div class="order-banner">
+      <h3>Place an Order on WhatsApp</h3>
+      <p>Type the items you need below and click to send directly to 9007182511 for fast packing.</p>
+      
+      <textarea 
+        id="orderNote" 
+        class="order-textarea" 
+        placeholder="e.g. 2 packs spicy chanachur, 1kg Muri, 1 bottle Mustard oil, 2 packs chips..."
+      ></textarea>
+      <br>
+      <button class="btn-wa-order" onclick="submitToWhatsApp()">
+        💬 Send Order to Gupta Variety Store
+      </button>
+    </div>
+  </div>
+
+  <!-- Store Information & Live Google Map Embed -->
+  <div class="container">
+    <div class="section-title">
+      <h2>Visit Store / Store Location</h2>
+      <p>Easy to locate opposite to the pond in Patipukur</p>
+    </div>
+
+    <div class="info-layout">
+      <!-- Address & Details Card -->
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-label">Shop Name</div>
+          <div class="info-value"><strong>Gupta Variety Store</strong> (গুপ্তা ভ্যারাইটি স্টোর্স)</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">Store Address</div>
+          <div class="info-value">77 Basak Bagan, Patipukur, Kolkata - 700048, West Bengal</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">Landmark</div>
+          <div class="info-value">📍 Opposite to the Pond</div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">Daily Opening Hours</div>
+          <div class="info-value">
+            <strong>Morning:</strong> 7:00 AM – 2:30 PM<br>
+            <strong>Evening:</strong> 6:00 PM – 11:30 PM<br>
+            <em>Open 7 days a week</em>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">Phone & WhatsApp</div>
+          <div class="info-value">
+            <a href="tel:9007182511" style="color: var(--primary); font-weight: 700; text-decoration: none;">+91 9007182511</a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">Direct Google Maps Pin</div>
+          <div class="info-value">
+            <a href="https://maps.app.goo.gl/jZTZwWHBABTrJTg39" target="_blank" style="color: var(--primary); font-weight: 700; text-decoration: none;">
+              🗺️ Open in Google Maps App ➜
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Google Maps Iframe Embed -->
+      <div class="map-frame-box">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1655789823603!2d88.39316537385112!3d22.61029123159065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277003c2195d7%3A0x6a830545c2e1d12f!2sGupta%20Variety%20Store!5e0!3m2!1sen!2sin!4v1789236252100!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Gupta Variety Store (গুপ্তা ভ্যারাইটি স্টোর্স). 77 Basak Bagan, Patipukur, Kolkata-700048.</p>
+    <p style="margin-top: 0.35rem; font-size: 0.78rem;">Cash & UPI Accepted (Google Pay, PhonePe, Paytm)</p>
+  </footer>
+
+  <!-- Floating Sticky Buttons on Mobile -->
+  <div class="mobile-footer">
+    <a href="tel:9007182511" class="m-btn m-btn-call">
+      📞 Call Store
+    </a>
+    <a href="https://wa.me/919007182511?text=Hello%20Gupta%20Variety%20Store,%20I%20want%20to%20order%20groceries." class="m-btn m-btn-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <!-- Script for Search and WhatsApp Order -->
+  <script>
+    function searchItems() {
+      const input = document.getElementById('itemSearch').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.product-card');
+      let visibleCount = 0;
+      const noResults = document.getElementById('noResults');
+
+      cards.forEach(card => {
+        const text = (card.textContent + ' ' + card.getAttribute('data-tags')).toLowerCase();
+        const matches = text.includes(input);
+        card.style.display = matches ? 'flex' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 && input ? 'block' : 'none';
+      }
+    }
+
+    function submitToWhatsApp() {
+      const text = document.getElementById('orderNote').value.trim();
+      const shopPhone = "919007182511";
+      
+      let message = "Hello Gupta Variety Store! I would like to order the following items:\n\n";
+      if (text) {
+        message += text;
+      } else {
+        message += "(Please share today's snack and ration availability/prices)";
+      }
+      
+      const encoded = encodeURIComponent(message);
+      window.open(`https://wa.me/${shopPhone}?text=${encoded}`, '_blank');
+    }
+  </script>
+</body>
+</html>
